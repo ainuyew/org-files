@@ -1,0 +1,11 @@
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [a4paper, 11pt]
+#+OPTIONS: toc:t H:3
+#+LATEX_HEADER: \RequirePackage{listings}
+#+LATEX_HEADER: \RequirePackage{fancyvrb}
+#+LATEX_HEADER: \DefineVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\scriptsize}
+#+LATEX_HEADER: \DefineVerbatimEnvironment{lstlisting}{Verbatim}{fontsize=\scriptsize}
+#+LATEX_HEADER: \usepackage{helvet}
+#+LATEX_HEADER: \renewcommand\familydefault{\sfdefault}
+#+LATEX_HEADER: \usepackage{python}
+#+LATEX_HEADER: \usepackage{tikz}

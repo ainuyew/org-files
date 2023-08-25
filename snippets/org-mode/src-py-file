@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: src-py-file
+# key: \pyf
+# --
+#+begin_src :python :results file :export both
+$0
+#+end_src

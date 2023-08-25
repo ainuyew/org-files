@@ -1,0 +1,6 @@
+# key: \pyv
+# name: src-py-var
+# --
+#+begin_src python :session :results variable :export both
+$0
+#+end_src

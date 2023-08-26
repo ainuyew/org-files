@@ -43,7 +43,7 @@ This function should only modify configuration layer settings."
       auto-completion-private-snippets-directory (expand-file-name "~/Documents/notebook/snippets"))
      ;; better-defaults
      ;; emacs-lisp
-     ;; git
+     git
      helm
      ;; lsp
      markdown

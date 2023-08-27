@@ -596,12 +596,8 @@ before packages are loaded."
                                (R . t)
                                (shell . t)))
    (org-confirm-babel-evaluate nil)
+   (org-roam-directory (expand-file-name "~/Documents/org"))
    (org-babel-python-command "python3"))
-
-  (use-package org-roam
-    :after org
-   (org-enable-roam-support t)
-   (org-roam-directory org-directory))
 
   (use-package org-roam-bibtex
     :after org-roam
@@ -635,13 +631,18 @@ before packages are loaded."
 
   (use-package org-noter
     :after (:any org pdf-view))
-    ;;:custom (org-noter-always-create-frame nil))
+  ;;:custom (org-noter-always-create-frame nil))
 
   (use-package org-noter-pdftools
     :after org-noter
     :config
     (with-eval-after-load 'pdf-annot
       (add-hook 'pdf-annot-activate-handler-functions #'org-noter-pdftools-jump-to-note)))
+
+  (use-package org-agenda
+    :after org
+    :custom
+    (org-agenda-files (list org-directory (concat org-directory "/daily"))))
 )
 
 

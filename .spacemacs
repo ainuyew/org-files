@@ -39,7 +39,7 @@ This function should only modify configuration layer settings."
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      (auto-completion :variables
-                      auto-completion-private-snippets-directory (expand-file-name "~/Documents/notebook/snippets"))
+                      auto-completion-private-snippets-directory (expand-file-name "~/Documents/org-files/snippets"))
      ;; better-defaults
      emacs-lisp
      ;; git
@@ -48,7 +48,7 @@ This function should only modify configuration layer settings."
      ;; markdown
      multiple-cursors
      (org :variables
-          org-directory (expand-file-name "~/Documents/notebook")
+          org-directory (expand-file-name "~/Documents/org")
           org-default-notes-file (concat org-directory "/inbox.org")
           ;;org-roam
           org-enable-roam-support t

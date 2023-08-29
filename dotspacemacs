@@ -70,11 +70,10 @@ This function should only modify configuration layer settings."
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(
                                       yasnippet
+                                      nov
+                                      djvu
                                       org-noter
-                                      org-noter-pdftools
-                                      pdf-view
-                                      pdf-annot
-                                      org-habit)
+                                      org-noter-pdftools)
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()

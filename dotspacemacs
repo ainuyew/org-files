@@ -70,12 +70,11 @@ This function should only modify configuration layer settings."
    ;; Also include the dependencies as they will not be resolved automatically.
    dotspacemacs-additional-packages '(
                                       yasnippet
-                                      pdf-view
-                                      pdf-annot
                                       org-noter
                                       org-noter-pdftools
-                                      org-habit
-                                      python)
+                                      pdf-view
+                                      pdf-annot
+                                      org-habit)
 
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
@@ -643,7 +642,7 @@ before packages are loaded."
   (use-package org-agenda
     :after org
     :custom
-    (org-agenda-files (list org-directory (concat org-directory "/daily"))))
+    (org-agenda-files (list org-directory (concat org-directory "/daily") (expand-file-name "~/Documents/jgm"))))
 )
 
 

@@ -642,6 +642,7 @@ before packages are loaded."
     :after org
     :custom
     (org-agenda-files (list org-directory (concat org-directory "/daily") (expand-file-name "~/Documents/jgm"))))
+
 )
 
 

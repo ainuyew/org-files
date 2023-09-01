@@ -642,10 +642,8 @@ before packages are loaded."
     :after org
     :custom
     (org-agenda-files (list
-                       (expand-file-name "~/Documents/org")
-                       (expand-file-name "~/Documents/org/org-roam")
-                       (expand-file-name "~/Documents/org/org-roam/daily")
-                       (expand-file-name "~/Documents/jgm"))))
+                       (expand-file-name "~/Documents/org/tasks.org")
+                       (expand-file-name "~/Documents/jgm/jeragm.org"))))
 )
 
 

@@ -266,7 +266,7 @@ It should only modify the values of Spacemacs settings."
    ;; a non-negative integer (pixel size), or a floating-point (point size).
    ;; Point size is recommended, because it's device independent. (default 10.0)
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 10.0
+                               :size 13
                                :weight normal
                                :width normal)
 
@@ -596,6 +596,7 @@ before packages are loaded."
                                (shell . t)))
    (org-confirm-babel-evaluate nil)
    (org-roam-directory (expand-file-name "~/Documents/org/org-roam"))
+   (org-src-tab-acts-natively nil)
    (org-babel-python-command "python3"))
 
   (use-package org-roam-bibtex
@@ -641,9 +642,15 @@ before packages are loaded."
   (use-package org-agenda
     :after org
     :custom
-    (org-agenda-files (list
-                       (expand-file-name "~/Documents/org/tasks.org")
-                       (expand-file-name "~/Documents/jgm/jeragm.org"))))
+    (org-agenda-files '("/Users/huiyuanchua/Documents/org/inbox.org" "/Users/huiyuanchua/Documents/jgm/jeragm.org") nil nil "Customized with use-package org-agenda"))
+
+  (use-package org-roam
+    :after org
+    :custom
+    (org-roam-dailies-capture-templates
+     '(("d" "default" entry
+        "* %?"
+        :target (file+datetree "journal.org" week)))))
 )
 
 
@@ -654,14 +661,14 @@ before packages are loaded."
 This is an auto-generated function, do not modify its content directly, use
 Emacs customize menu instead.
 This function is called at the very end of Spacemacs initialization."
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(evil-want-Y-yank-to-eol nil)
- '(org-agenda-files
-   '("/Users/huiyuanchua/Documents/org/finance.org" "/Users/huiyuanchua/Documents/org/inbox.org" "/Users/huiyuanchua/Documents/org/p1-admissions.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809064847-foundations_in_ai.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809065025-introduction_to_python.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809065903-intermediate_python.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809070009-python_data_science_toolbox_part_1.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809070112-python_data_science_toolbox_part_2.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809070209-cleaning_data_in_python.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809074435-manipulating_time_series_data_in_python.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809105557-emacs_shortcuts.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809162714-machine_learning_specialization.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809165848-unsupervised_learning_recommendations_reinforcement_learning.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809170713-git_cheatsheet.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809185713-maze.org" "/Users/huiyuanchua/Documents/org/org-roam/20230809204254-god_created_the_integers.org" "/Users/huiyuanchua/Documents/org/org-roam/20230810132653-matrix_tree_theorem.org" "/Users/huiyuanchua/Documents/org/org-roam/20230812183119-introduction_to_r.org" "/Users/huiyuanchua/Documents/org/org-roam/20230812194959-data_manipulation_with_pandas.org" "/Users/huiyuanchua/Documents/org/org-roam/20230812195052-manipulating_dataframes_with_pandas.org" "/Users/huiyuanchua/Documents/org/org-roam/20230814095807-merging_dataframes_with_pandas.org" "/Users/huiyuanchua/Documents/org/org-roam/20230816102024-introduction_to_seaborn.org" "/Users/huiyuanchua/Documents/org/org-roam/20230817120342-preprocessing_for_machine_learning_in_python.org" "/Users/huiyuanchua/Documents/org/org-roam/20230819071518-.org" "/Users/huiyuanchua/Documents/org/org-roam/20230819200233-learn_rust.org" "/Users/huiyuanchua/Documents/org/org-roam/20230819204329-learn_swift.org" "/Users/huiyuanchua/Documents/org/org-roam/20230820101916-feature_engineering_for_machine_learning_in_python.org" "/Users/huiyuanchua/Documents/org/org-roam/20230822191808-feature_engineering_for_machine_learning_in_python.org" "/Users/huiyuanchua/Documents/org/org-roam/20230822200327-feature_engineering_for_nlp_in_python.org" "/Users/huiyuanchua/Documents/org/org-roam/20230824134818-statistical_thinking_in_python_part_1.org" "/Users/huiyuanchua/Documents/org/org-roam/20230830170147-statistical_thinking_in_python_part_2.org" "/Users/huiyuanchua/Documents/org/org-roam/20230830180322-statistical_thinking_in_python_part_2.org" "/Users/huiyuanchua/Documents/org/org-roam/daily/2023-08-25.org" "/Users/huiyuanchua/Documents/org/org-roam/daily/2023-08-26.org" "/Users/huiyuanchua/Documents/org/org-roam/daily/2023-08-27.org" "/Users/huiyuanchua/Documents/org/org-roam/daily/2023-08-28.org" "/Users/huiyuanchua/Documents/org/org-roam/daily/2023-08-29.org" "/Users/huiyuanchua/Documents/org/org-roam/daily/2023-08-30.org") nil nil "Customized with use-package org-agenda")
+  (custom-set-variables
+   ;; custom-set-variables was added by Custom.
+   ;; If you edit it by hand, you could mess it up, so be careful.
+   ;; Your init file should contain only one such instance.
+   ;; If there is more than one, they won't work right.
+   '(evil-want-Y-yank-to-eol nil)
+   '(org-agenda-files
+     '("/Users/huiyuanchua/Documents/org/inbox.org" "/Users/huiyuanchua/Documents/jgm/jeragm.org") nil nil "Customized with use-package org-agenda")
  '(package-selected-packages
    '(company-anaconda counsel-gtags counsel swiper ivy dap-mode lsp-docker lsp-treemacs bui flycheck pkg-info epl ggtags helm-cscope lsp-pyright lsp-python-ms lsp-mode spinner smartparens stickyfunc-enhance window-purpose imenu-list xcscope org-habit-stats org-noter-pdftools org-pdftools pdf-tools tablist org-noter org-roam-ui websocket simple-httpd org-roam gnu-elpa-keyring-update use-package company-emoji emoji-cheat-sheet-plus gh-md markdown-toc markdown-mode mmm-mode valign vmd-mode anaconda-mode blacken code-cells cython-mode helm-pydoc importmagic epc ctable concurrent deferred live-py-mode nose pip-requirements pipenv load-env-vars pippel poetry transient py-isort pydoc pyenv-mode pythonic pylookup pytest pyvenv sphinx-doc yapfify yasnippet evil-org gnuplot helm-org-rifle htmlize org-cliplink org-contrib org-download org-mime org-pomodoro alert log4e gntp org-projectile org-project-capture org-category-capture org-rich-yank magit-section emacsql ws-butler writeroom-mode winum which-key volatile-highlights vim-powerline vi-tilde-fringe uuidgen undo-tree treemacs-projectile treemacs-persp treemacs-icons-dired treemacs-evil toc-org term-cursor symon symbol-overlay string-inflection string-edit-at-point spacemacs-whitespace-cleanup spacemacs-purpose-popwin spaceline space-doc restart-emacs request rainbow-delimiters quickrun popwin pcre2el password-generator paradox overseer open-junk-file nameless multi-line macrostep lorem-ipsum link-hint inspector info+ indent-guide hybrid-mode hungry-delete holy-mode hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt helm-xref helm-themes helm-swoop helm-purpose helm-projectile helm-org helm-mode-manager helm-make helm-descbinds helm-ag google-translate golden-ratio flycheck-package flycheck-elsa flx-ido fancy-battery eyebrowse expand-region evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-textobj-line evil-surround evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-lisp-state evil-lion evil-indent-plus evil-iedit-state evil-goggles evil-exchange evil-evilified-state evil-escape evil-easymotion evil-collection evil-cleverparens evil-args evil-anzu eval-sexp-fu emr elisp-slime-nav elisp-def editorconfig dumb-jump drag-stuff dotenv-mode dired-quick-sort diminish devdocs define-word column-enforce-mode clean-aindent-mode centered-cursor-mode auto-highlight-symbol auto-compile all-the-icons aggressive-indent ace-link ace-jump-helm-line))
  '(safe-local-variable-values

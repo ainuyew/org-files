@@ -77,21 +77,24 @@
 
 
 (after! org
- (setq org-default-notes-file (concat org-directory "/inbox.org"))
- (setq org-babel-load-languages '((emacs-lisp . t)
-                                  (python . t)
-                                  (R . t)
-                                  (shell . t)))
+ ;; (setq org-default-notes-file (concat org-directory "/inbox.org"))
+ (org-babel-do-load-languages
+  'org-babel-load-languages '((emacs-lisp . t)
+                              (python . t)
+                              (R .  t)
+                              (shell . t)))
  (setq org-confirm-babel-evaluate nil)
  (setq org-src-tab-acts-natively nil)
  (setq org-babel-python-command "python3")
- (setq org-agenda-files '("~/Documents/org/inbox.org" "~/Documents/jgm/jeragm.org"))
+ (setq org-agenda-files '("~/Documents/org/todo.org" "~/Documents/jgm/jeragm.org" "~/Documents/org/inbox.org"))
  (setq org-roam-directory (expand-file-name "~/Documents/org/org-roam")))
 
 ;; Org-habit
 (use-package! org-habit
   :after org
   :config
+  (setq org-todo-keywords
+      '((sequence "TODO(t)" "WAIT(w@/!)" "|" "DONE(d!)" "CANCELED(c@)")))
   (setq org-habit-following-days 7
         org-habit-preceding-days 35
         org-habit-show-habits t)  )

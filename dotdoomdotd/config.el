@@ -85,7 +85,7 @@
  (setq org-confirm-babel-evaluate nil)
  (setq org-src-tab-acts-natively nil)
  (setq org-babel-python-command "python3")
- (setq org-agenda-files '("/Users/huiyuanchua/Documents/org/inbox.org" "/Users/huiyuanchua/Documents/jgm/jeragm.org"))
+ (setq org-agenda-files '("~/Documents/org/inbox.org" "~/Documents/jgm/jeragm.org"))
  (setq org-roam-directory (expand-file-name "~/Documents/org/org-roam")))
 
 ;; Org-habit

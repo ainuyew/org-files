@@ -87,3 +87,11 @@
  (setq org-babel-python-command "python3")
  (setq org-agenda-files '("/Users/huiyuanchua/Documents/org/inbox.org" "/Users/huiyuanchua/Documents/jgm/jeragm.org"))
  (setq org-roam-directory (expand-file-name "~/Documents/org/org-roam")))
+
+;; Org-habit
+(use-package! org-habit
+  :after org
+  :config
+  (setq org-habit-following-days 7
+        org-habit-preceding-days 35
+        org-habit-show-habits t)  )

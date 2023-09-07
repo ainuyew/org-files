@@ -78,11 +78,11 @@
 
 (after! org
  ;; (setq org-default-notes-file (concat org-directory "/inbox.org"))
- (org-babel-do-load-languages
-  'org-babel-load-languages '((emacs-lisp . t)
-                              (python . t)
-                              (R .  t)
-                              (shell . t)))
+ ;; (org-babel-do-load-languages
+  ;; 'org-babel-load-languages '((emacs-lisp . t)
+                              ;; (python . t)
+                              ;; (R .  t)
+                              ;; (shell . t)))
 
  (setq org-confirm-babel-evaluate nil
        org-src-tab-acts-natively nil
@@ -102,10 +102,8 @@
 
 
 (after! python-mode
-  (setq python-shell-interpreter "ipython"
+  (setq python-python-command "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
+        python-shell-interpreter "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
 	python-shell-interpreter-args "console --simple-prompt"
-	python-shell-prompt-detect-failure-warning nil)
-  (add-to-list 'python-shell-completion-native-disabled-interpreters
-	       "python3")
-  (add-to-list 'python-shell-completion-native-disabled-interpreters
-	       "ipython"))
+        python-shell-completion-native-enable nil
+	python-shell-prompt-detect-failure-warning nil) )

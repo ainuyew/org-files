@@ -90,10 +90,7 @@
        org-roam-directory (expand-file-name "~/Documents/org/org-roam")
        ;; org-babel
        ;;org-babel-python-command "python3"
-       org-src-fontify-natively t
-       python-shell-interpreter "ipython"
-       python-shell-interpreter-args "-i --simple-prompt")
-       python-shell-completion-native-disabled-interpreters '("pypy" "ipython") )
+       org-src-fontify-natively t) )
 
 ;; Org-habit
 (use-package! org-habit
@@ -102,3 +99,13 @@
   (setq org-habit-following-days 7
         org-habit-preceding-days 35
         org-habit-show-habits t)  )
+
+
+(after! python-mode
+  (setq python-shell-interpreter "ipython"
+	python-shell-interpreter-args "console --simple-prompt"
+	python-shell-prompt-detect-failure-warning nil)
+  (add-to-list 'python-shell-completion-native-disabled-interpreters
+	       "python3")
+  (add-to-list 'python-shell-completion-native-disabled-interpreters
+	       "ipython"))

@@ -77,19 +77,19 @@
 
 
 (after! org
- ;; (setq org-default-notes-file (concat org-directory "/inbox.org"))
  ;; (org-babel-do-load-languages
-  ;; 'org-babel-load-languages '((emacs-lisp . t)
-                              ;; (python . t)
-                              ;; (R .  t)
-                              ;; (shell . t)))
+  ;; 'org-babel-load-languages
+  ;; '((emacs-lisp . t)
+    ;; (shell . t)
+    ;; (R .  t)
+    ;; (python . t) )))
 
  (setq org-confirm-babel-evaluate nil
        org-src-tab-acts-natively nil
        org-agenda-files (directory-files-recursively "~/Documents/org/" "\\.org$")
        org-roam-directory (expand-file-name "~/Documents/org/org-roam")
        ;; org-babel
-       ;;org-babel-python-command "python3"
+       python-shell-completion-native-enable nil
        org-src-fontify-natively t) )
 
 ;; Org-habit
@@ -100,10 +100,5 @@
         org-habit-preceding-days 35
         org-habit-show-habits t)  )
 
-
-(after! python-mode
-  (setq python-python-command "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
-        python-shell-interpreter "/Library/Frameworks/Python.framework/Versions/3.11/bin/python3"
-	python-shell-interpreter-args "console --simple-prompt"
-        python-shell-completion-native-enable nil
-	python-shell-prompt-detect-failure-warning nil) )
+(setq +python-ipython-repl-args '("-i" "--simple-prompt" "--no-color-info"))
+;; (setq +python-jupyter-repl-args '("--simple-prompt"))

@@ -8,6 +8,14 @@
 
 ;; To install SOME-PACKAGE from MELPA, ELPA or emacsmirror:
 ;(package! some-package)
+(unpin! org-roam)
+(package! org-roam-ui)
+(package! ivy-bibtex)
+(package! org-ref)
+(package! org-roam-bibtex)
+(package! org-noter)
+(package! org-noter-pdftools)
+(package! org-pdftools)
 
 ;; To install a package directly from a remote git repo, you must specify a
 ;; `:recipe'. You'll find documentation on what `:recipe' accepts here:

@@ -125,10 +125,10 @@
     (setq
          org-ref-completion-library 'org-ref-ivy-cite
          org-ref-get-pdf-filename-function 'org-ref-get-pdf-filename-helm-bibtex
-         bibtex-completion-bibliography (list "~/Docuemnts/org/references/zotero.bib")
+         bibtex-completion-bibliography (list "~/Documents/org/references/zotero.bib")
          bibtex-completion-notes "~/Documents/org/references/notes/bibnotes.org"
          org-ref-note-title-format "* %y - %t\n :PROPERTIES:\n  :Custom_ID: %k\n  :NOTER_DOCUMENT: %F\n :ROAM_KEY: cite:%k\n  :AUTHOR: %9a\n  :JOURNAL: %j\n  :YEAR: %y\n  :VOLUME: %v\n  :PAGES: %p\n  :DOI: %D\n  :URL: %U\n :END:\n\n"
-         org-ref-notes-directory "~/Docuemnts/org/references/notes/"
+         org-ref-notes-directory "~/Documents/org/references/notes/"
          org-ref-notes-function 'orb-edit-notes
     ))
 
@@ -175,15 +175,15 @@
    ;; I want to see the whole file
    org-noter-hide-other nil
    ;; Everything is relative to the rclone mega
-   org-noter-notes-search-path "~/Dropbox/Org/references/notes"
+   org-noter-notes-search-path "~/Documents/org/org-roam"
    )
   )
 
-(use-package! org-pdftools
-  :hook (org-load . org-pdftools-setup-link))
+;;(use-package! org-pdftools
+;;  :hook (org-load . org-pdftools-setup-link))
 
-(use-package! org-noter-pdftools
-  :after org-noter
-  :config
-  (with-eval-after-load 'pdf-annot
-    (add-hook 'pdf-annot-activate-handler-functions #'org-noter-pdftools-jump-to-note)))
+;;(use-package! org-noter-pdftools
+;;  :after org-noter
+;;  :config
+;;  (with-eval-after-load 'pdf-annot
+;;    (add-hook 'pdf-annot-activate-handler-functions #'org-noter-pdftools-jump-to-note)))

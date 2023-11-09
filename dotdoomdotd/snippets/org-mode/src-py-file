@@ -2,6 +2,6 @@
 # name: src-py-file
 # key: \pyf
 # --
-#+begin_src python :session :results file :export both
+#+begin_src python :session :results file link :export both :file .png :output-dir
 $0
 #+end_src

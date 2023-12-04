@@ -24,8 +24,9 @@
        company           ; the ultimate code completion backend
        ;;helm              ; the *other* search engine for love and life
        ;;ido               ; the other *other* search engine...
-       (ivy +icons +fuzzy +childframe)               ; a search engine for love and life
-       ;;vertico           ; the search engine of the future
+       ;;(ivy +icons +fuzzy +childframe)               ; a search engine for love and life
+       ;;(ivy +fuzzy)               ; a search engine for love and life
+       vertico           ; the search engine of the future
 
        :ui
        ;;deft              ; notational velocity for Emacs
@@ -156,7 +157,8 @@
        ;;ocaml             ; an objective camel
        (org +roam2
             +journal
-            +noter
+            ;;+noter
+            +jupyter
             +dragndrop)    ; organize your plain life in plain text
        ;;php               ; perl's insecure younger brother
        ;;plantuml          ; diagrams for confusing people more

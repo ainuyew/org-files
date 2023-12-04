@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: src-py-file
+# key: \pyf
+# --
+#+NAME: generic-file-name
+#+begin_src python :session :results file link :export both :file-ext png :output-dir (file-name-sans-extension (buffer-file-name))
+$0
+#+end_src

@@ -40,8 +40,8 @@
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!
-(setq org-directory "~/Documents/org/")
-
+(setq org-directory "~/Documents/org/"
+      org-roam-directory (expand-file-name "~/Documents/org/org-roam"))
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
@@ -77,20 +77,22 @@
 
 
 (after! org
- ;; (org-babel-do-load-languages
-  ;; 'org-babel-load-languages
-  ;; '((emacs-lisp . t)
-    ;; (shell . t)
-    ;; (R .  t)
-    ;; (python . t) )))
+  (advice-remove #'org-babel-do-load-languages #'ignore)
+  (org-babel-do-load-languages
+   'org-babel-load-languages
+   '((emacs-lisp . t)
+     (shell . t)
+     (R .  t)
+     (python .  t)
+     (jupyter . t) ))
 
- (setq org-confirm-babel-evaluate nil
-       org-src-tab-acts-natively nil
-       org-agenda-files (directory-files-recursively "~/Documents/org/" "\\.org$")
-       org-roam-directory (expand-file-name "~/Documents/org/org-roam")
-       ;; org-babel
-       python-shell-completion-native-enable nil
-       org-src-fontify-natively t) )
+  (setq org-confirm-babel-evaluate nil
+        org-src-tab-acts-natively nil
+        org-agenda-files (directory-files-recursively "~/Documents/org/" "\\.org$")
+        ;;org-roam-directory (expand-file-name "~/Documents/org/org-roam")
+        ;; org-babel
+        ;;python-shell-completion-native-enable nil
+        org-src-fontify-natively t))
 
 ;; Org-habit
 (use-package! org-habit
@@ -100,7 +102,7 @@
         org-habit-preceding-days 35
         org-habit-show-habits t)  )
 
-(setq +python-ipython-repl-args '("-i" "--simple-prompt" "--no-color-info"))
+;; (setq +python-ipython-repl-args '("-i" "--simple-prompt" "--no-color-info"))
 ;; (setq +python-jupyter-repl-args '("--simple-prompt"))
 
 
@@ -119,12 +121,12 @@
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
 
- (use-package! org-ref
-    ;:after org-roam
+(use-package! org-ref
+    :after org-roam
     :config
     (setq
-         org-ref-completion-library 'org-ref-ivy-cite
-         org-ref-get-pdf-filename-function 'org-ref-get-pdf-filename-helm-bibtex
+;;         org-ref-completion-library 'org-ref-ivy-cite
+;;         org-ref-get-pdf-filename-function 'org-ref-get-pdf-filename-helm-bibtex
          bibtex-completion-bibliography (list "~/Documents/org/references/zotero.bib")
          bibtex-completion-notes "~/Documents/org/references/notes/bibnotes.org"
          org-ref-note-title-format "* %y - %t\n :PROPERTIES:\n  :Custom_ID: %k\n  :NOTER_DOCUMENT: %F\n :ROAM_KEY: cite:%k\n  :AUTHOR: %9a\n  :JOURNAL: %j\n  :YEAR: %y\n  :VOLUME: %v\n  :PAGES: %p\n  :DOI: %D\n  :URL: %U\n :END:\n\n"
@@ -164,26 +166,17 @@
   (setq orb-preformat-keywords
    '("citekey" "title" "url" "file" "author-or-editor" "keywords" "pdf" "doi" "author" "tags" "year" "author-bbrev")))
 
-(use-package! org-noter
-  :after (:any org pdf-view)
-  :config
-  (setq
+;;(use-package! org-noter
+;;  :after (:any org pdf-view)
+;;  :config
+;;  (setq
    ;; The WM can handle splits
    ;;org-noter-notes-window-location 'other-frame
    ;; Please stop opening frames
    ;;org-noter-always-create-frame nil
    ;; I want to see the whole file
-   org-noter-hide-other nil
+;;   org-noter-hide-other nil
    ;; Everything is relative to the rclone mega
-   org-noter-notes-search-path "~/Documents/org/org-roam"
-   )
-  )
-
-;;(use-package! org-pdftools
-;;  :hook (org-load . org-pdftools-setup-link))
-
-;;(use-package! org-noter-pdftools
-;;  :after org-noter
-;;  :config
-;;  (with-eval-after-load 'pdf-annot
-;;    (add-hook 'pdf-annot-activate-handler-functions #'org-noter-pdftools-jump-to-note)))
+;;   org-noter-notes-search-path "~/Documents/org/org-roam"
+;;   )
+;;  )

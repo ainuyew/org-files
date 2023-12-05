@@ -305,6 +305,11 @@
         completion-category-defaults nil
         completion-category-overrides '((file (styles partial-completion)))))
 
+;; source: https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html
+(setq org-agenda-files '("~/Documents/org/inbox.org"
+                         "~/Documents/org/gtd.org"
+                         "~/Documents/org/tickler.org"))
+
 ;; Configure the Modus Themes' appearance
 (setq modus-themes-mode-line '(accented borderless)
       modus-themes-bold-constructs t

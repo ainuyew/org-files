@@ -71,3 +71,5 @@ Thumbs.db
 __pycache__
 
 elpa/*
+eln-cache/*
+org-roam.db

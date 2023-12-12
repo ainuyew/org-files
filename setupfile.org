@@ -9,3 +9,4 @@
 #+LATEX_HEADER: \renewcommand\familydefault{\sfdefault}
 #+LATEX_HEADER: \usepackage{python}
 #+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{amsmath, bm}

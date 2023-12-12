@@ -108,7 +108,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
@@ -135,7 +135,8 @@
   (auto-fill-mode 0)
   (visual-line-mode 1)
   (setq evil-auto-indent nil)
-  (diminish org-indent-mode))
+  (diminish org-indent-mode)
+  t)
 
 ;; Make sure Straight pulls Org from Guix
 ;;(when dw/is-guix-system
@@ -144,7 +145,7 @@
 
 (use-package org
   :defer t
-  :hook (org-mode . dw/org-mode-setup)
+  ;;:hook (org-mode . dw/org-mode-setup)
   :config
   (setq org-ellipsis " ▾"
         org-hide-emphasis-markers t
@@ -209,7 +210,7 @@
     (org-download-enable)))
   
 ;; Org-Roam basic configuration
-(setq org-directory (concat (getenv "HOME") "/Documents/org/org-roam"))
+(setq org-directory (concat (getenv "HOME") "/Documents/org/roam"))
 
 (use-package org-roam
   :ensure t
@@ -231,19 +232,32 @@
 
 
 :custom
-(require 'oc-biblatex)
-(setq org-cite-global-bibliography '("/Users/huiyuanchua/Documents/org/references/zotero.bib"))
+;; source: https://github.com/emacs-citar/citar
+(use-package citar
+  :custom
+  (citar-bibliography '("~/Documents/org/bibliography/zotero.bib")))
 
-
-(setq org-latex-listings 'minted
-      org-latex-packages-alist '(("" "minted"))
-      org-latex-pdf-process
-      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
-
-(setq org-latex-minted-options '(("breaklines" "true")
-                                 ("breakanywhere" "true")))
+;; source: https://github.com/emacs-citar/citar-org-roam
+(use-package citar-org-roam
+  :after (citar org-roam)
+  :config
+  (setq citar-org-roam-note-title-template "${author} - ${title}")
+  (setq org-roam-capture-templates
+      '(("d" "default" plain
+         "%?"
+         :target
+         (file+head
+          "%<%Y%m%d%H%M%S>-${slug}.org"
+          "#+title: ${note-title}\n")
+         :unnarrowed t)
+        ("n" "literature note" plain
+         "%?"
+         :target
+         (file+head
+          "%(expand-file-name (or citar-org-roam-subdir \"\") org-roam-directory)/${citar-citekey}.org"
+          "#+title: ${citar-citekey} (${citar-date}). ${note-title}.\n#+created: %U\n#+last_modified: %U\n\n")
+         :unnarrowed t)))
+  (citar-org-roam-mode))
 
 ;; yasnippets
 (use-package yasnippet
@@ -258,8 +272,43 @@
 
 ;; python
 ;;(setq org-babel-python-command "python3")
-(setq python-shell-completion-native-enable nil)
+;;(setq python-shell-completion-native-enable nil)
 ;;(setq python-shell-completion-native-disabled-interpreters '("python3"))
+
+;; source: https://github.com/minad/vertico
+;; Enable vertico
+(use-package vertico
+  :init
+  (vertico-mode)
+
+  ;; Different scroll margin
+  ;; (setq vertico-scroll-margin 0)
+
+  ;; Show more candidates
+  ;; (setq vertico-count 20)
+
+  ;; Grow and shrink the Vertico minibuffer
+  ;; (setq vertico-resize t)
+
+  ;; Optionally enable cycling for `vertico-next' and `vertico-previous'.
+  ;; (setq vertico-cycle t)
+  )
+
+;; source: https://github.com/minad/vertico
+;; Optionally use the `orderless' completion style.
+(use-package orderless
+  :init
+  ;; Configure a custom style dispatcher (see the Consult wiki)
+  ;; (setq orderless-style-dispatchers '(+orderless-consult-dispatch orderless-affix-dispatch)
+  ;;       orderless-component-separator #'orderless-escapable-split-on-space)
+  (setq completion-styles '(orderless basic)
+        completion-category-defaults nil
+        completion-category-overrides '((file (styles partial-completion)))))
+
+;; source: https://emacs.cafe/emacs/orgmode/gtd/2017/06/30/orgmode-gtd.html
+(setq org-agenda-files '("~/Documents/org/inbox.org"
+                         "~/Documents/org/gtd.org"
+                         "~/Documents/org/tickler.org"))
 
 ;; Configure the Modus Themes' appearance
 (setq modus-themes-mode-line '(accented borderless)

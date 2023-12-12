@@ -44,6 +44,9 @@
 
 ;; clean up emacs' user interface
 
+;; source: https://stackoverflow.com/questions/11670654/how-to-resize-images-in-org-mode
+(setq org-image-actual-width 800)
+
 ;; Thanks, but no thanks
 (setq inhibit-startup-message t)
 
@@ -108,7 +111,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(citar citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
@@ -330,5 +333,15 @@
         (3 . (rainbow bold 1.2))
         (t . (semilight 1.1))))
 
-;; Load the dark theme by default
-(load-theme 'modus-vivendi t)
+;; Load the light theme by default
+(load-theme 'modus-operandi t)
+
+;; https://systemcrafters.net/emacs-from-scratch/helpful-ui-improvements/
+(use-package which-key
+  :init (which-key-mode)
+  :diminish which-key-mode
+  :config
+  (setq which-key-idle-delay 0.3))
+
+;; source: https://github.com/jkitchin/org-ref/issues/428
+(require 'org-id)

@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/Documents/org/roam/20231212070453-loss_function.org")
- (front-context-string . "A _loss function")
- (rear-context-string . ": Loss Function\n")
- (position . 91)
- (last-modified 25975 38303 838693 0))
+ (filename . "~/Documents/org/roam/20231211133522-latent_variable_model.org")
+ (front-context-string . "_Latent Variable")
+ (rear-context-string . " Variable Model\n")
+ (position . 99)
+ (last-modified 25974 40966 283410 0))
 )

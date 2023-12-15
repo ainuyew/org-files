@@ -68,8 +68,8 @@
 (setq use-dialog-box nil) ;; Disable dialog boxes since they weren't working in Mac OSX
 
 ;; frame transperency and maximize windows by default
-(set-frame-parameter (selected-frame) 'alpha '(90 . 90))
-(add-to-list 'default-frame-alist '(alpha . (90 . 90)))
+;;(set-frame-parameter (selected-frame) 'alpha '(90 . 90))
+;;(add-to-list 'default-frame-alist '(alpha . (90 . 90)))
 (set-frame-parameter (selected-frame) 'fullscreen 'maximized)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
@@ -111,7 +111,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
@@ -345,3 +345,4 @@
 
 ;; source: https://github.com/jkitchin/org-ref/issues/428
 (require 'org-id)
+

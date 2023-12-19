@@ -346,3 +346,5 @@
 ;; source: https://github.com/jkitchin/org-ref/issues/428
 (require 'org-id)
 
+;; source: https://github.com/vedang/pdf-tools
+(pdf-loader-install)

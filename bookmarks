@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/Documents/org/roam/20231218101035-perron_frobenius_theorem.org")
- (front-context-string)
- (rear-context-string . "obenius theorem\n")
+ (filename . "~/Documents/org/roam/20231220102138-doubly_stochastic_matrix.org")
+ (front-context-string . "A transition pro")
+ (rear-context-string . "ochastic Matrix\n")
  (position . 102)
- (last-modified 25983 43557 620503 0))
+ (last-modified 25986 20836 249769 0))
 )

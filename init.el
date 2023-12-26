@@ -45,7 +45,7 @@
 ;; clean up emacs' user interface
 
 ;; source: https://stackoverflow.com/questions/11670654/how-to-resize-images-in-org-mode
-(setq org-image-actual-width 800)
+(setq org-image-actual-width (list 550))
 
 ;; Thanks, but no thanks
 (setq inhibit-startup-message t)
@@ -261,6 +261,9 @@
           "#+title: ${citar-citekey} (${citar-date}). ${note-title}.\n#+created: %U\n#+last_modified: %U\n\n")
          :unnarrowed t)))
   (citar-org-roam-mode))
+
+;; source: https://orgmode.org/manual/Citations.html
+(setq org-cite-global-bibliography '("~/Documents/org/bibliography/zotero.bib"))
 
 ;; yasnippets
 (use-package yasnippet

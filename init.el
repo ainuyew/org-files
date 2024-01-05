@@ -107,7 +107,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(column-number-mode t)
  '(global-visual-line-mode t)
+ '(menu-bar-mode nil)
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
@@ -115,14 +117,15 @@
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
-                   (file-name-base buffer-file-name))))))
+                   (file-name-base buffer-file-name)))))
+ '(tool-bar-mode nil))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:family "Monaco" :foundry "nil" :slant normal :weight medium :height 141 :width normal)))))
 
 
 
@@ -337,7 +340,7 @@
         (t . (semilight 1.1))))
 
 ;; Load the light theme by default
-(load-theme 'modus-operandi t)
+(load-theme 'modus-vivendi t)
 
 ;; https://systemcrafters.net/emacs-from-scratch/helpful-ui-improvements/
 (use-package which-key
@@ -351,3 +354,44 @@
 
 ;; source: https://github.com/vedang/pdf-tools
 (pdf-loader-install)
+
+;; source: https://www.reddit.com/r/orgmode/comments/165zeuu/delighted_by_org_svg_preview/
+;; source: https://karthinks.com/software/scaling-latex-previews-in-emacs/
+(setq org-preview-latex-default-process 'dvisvgm) ;No blur when scaling
+(plist-put org-format-latex-options :foreground nil)
+(plist-put org-format-latex-options :background nil)
+(defun my/text-scale-adjust-latex-previews ()
+  "Adjust the size of latex preview fragments when changing the
+buffer's text scale."
+  (pcase major-mode
+    ('latex-mode
+     (dolist (ov (overlays-in (point-min) (point-max)))
+       (if (eq (overlay-get ov 'category)
+               'preview-overlay)
+           (my/text-scale--resize-fragment ov))))
+    ('org-mode
+     (dolist (ov (overlays-in (point-min) (point-max)))
+       (if (eq (overlay-get ov 'org-overlay-type)
+               'org-latex-overlay)
+           (my/text-scale--resize-fragment ov))))))
+
+(defun my/text-scale--resize-fragment (ov)
+  (overlay-put
+   ov 'display
+   (cons 'image
+         (plist-put
+          (cdr (overlay-get ov 'display))
+          :scale (+ 1.0 (* 0.25 text-scale-mode-amount))))))
+
+(add-hook 'text-scale-mode-hook #'my/text-scale-adjust-latex-previews)
+
+;; source: https://emacs.stackexchange.com/questions/43700/export-org-mode-code-blocks-with-minted-style
+(setq org-latex-listings 'minted
+    org-latex-packages-alist '(("newfloat" "minted"))
+    org-latex-pdf-process
+    '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+      "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+
+(add-to-list 'load-path (concat user-emacs-directory "lisp/" ))
+
+(load "ox-ipynb") ;; best not to include the ending “.el” or “.elc”

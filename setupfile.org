@@ -5,8 +5,10 @@
 #+LATEX_HEADER: \RequirePackage{fancyvrb}
 #+LATEX_HEADER: \DefineVerbatimEnvironment{verbatim}{Verbatim}{fontsize=\scriptsize}
 #+LATEX_HEADER: \DefineVerbatimEnvironment{lstlisting}{Verbatim}{fontsize=\scriptsize}
-#+LATEX_HEADER: \usepackage{helvet}
 #+LATEX_HEADER: \renewcommand\familydefault{\sfdefault}
 #+LATEX_HEADER: \usepackage{python}
 #+LATEX_HEADER: \usepackage{tikz}
 #+LATEX_HEADER: \usepackage{amsmath, bm}
+#+LATEX_HEADER: \usepackage{arev}
+#+LATEX_HEADER: \usepackage{minted}
+#+LATEX_HEADER: \usemintedstyle{borland}

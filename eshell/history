@@ -1,0 +1,14 @@
+ls
+cd Documents
+ls
+cd org-files/
+ls
+git pull
+git status
+git diff init.el 
+ls
+git status
+git checkout init.el 
+git status
+git add .
+git commit

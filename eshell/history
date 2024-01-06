@@ -1,1 +1,18 @@
+<<<<<<< HEAD
 rg decision
+=======
+ls
+cd Documents
+ls
+cd org-files/
+ls
+git pull
+git status
+git diff init.el 
+ls
+git status
+git checkout init.el 
+git status
+git add .
+git commit
+>>>>>>> 1675a4842411ee8f1f4cd34fea9e281d15e3f50c

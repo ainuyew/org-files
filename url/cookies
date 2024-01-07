@@ -6,12 +6,12 @@
   [url-cookie "NID" "511=uY2_OXm_sQ5IeYH-h4XuqV8FJ8elD0Oz4W79_JeHxvwRIDm0-gZDCV26QIq8YP8S7Kk69KCna5LrHk6zM9cNcVrCGxB6KuJstHn_frajRRDsoc8lfbwvpBXO5Ys1nYLOseAYBEBL-NexbDfmZk2OrZenK3gj7mfZ-4r9bGtAF-U" "Sun, 07-Jul-2024 09:10:51 GMT" "/" ".google.com" nil]))
 )
 (setq url-cookie-secure-storage
- '(("learn.aisingapore.org"
-  [url-cookie "session_id" "7e800991dfc64e383720330fbfe75cd3" "Sat Jan 06 11:35:49 2024 GMT" "/" "learn.aisingapore.org" t]
-  [url-cookie "email_id" "weiyuan.cai%40gmail.com" "Sat Jan 06 11:35:49 2024 GMT" "/" "learn.aisingapore.org" t])
- (".google.com"
-  [url-cookie "1P_JAR" "2024-01-06-09" "Mon, 05-Feb-2024 09:10:56 GMT" "/" ".google.com" t]
-  [url-cookie "AEC" "Ackid1R8bIqfkUnUJHtOk4lStVFHfhctcgRC7GK0jwGN201WVCDeSl3yylw" "Thu, 04-Jul-2024 09:10:56 GMT" "/" ".google.com" t]))
+ '((".google.com"
+  [url-cookie "AEC" "Ackid1R8bIqfkUnUJHtOk4lStVFHfhctcgRC7GK0jwGN201WVCDeSl3yylw" "Thu, 04-Jul-2024 09:10:56 GMT" "/" ".google.com" t]
+  [url-cookie "1P_JAR" "2024-01-06-09" "Mon, 05-Feb-2024 09:10:56 GMT" "/" ".google.com" t])
+ ("learn.aisingapore.org"
+  [url-cookie "email_id" "weiyuan.cai%40gmail.com" "Sun Jan 07 01:01:00 2024 GMT" "/" "learn.aisingapore.org" t]
+  [url-cookie "session_id" "8c5e509c2f6b3a9b67c69bb0549e0dd4" "Sun Jan 07 01:01:00 2024 GMT" "/" "learn.aisingapore.org" t]))
 )
 
 ;; Local Variables:

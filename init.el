@@ -395,3 +395,5 @@ buffer's text scale."
 (add-to-list 'load-path (concat user-emacs-directory "lisp/" ))
 
 (load "ox-ipynb") ;; best not to include the ending “.el” or “.elc”
+
+(setq org-default-notes-file (concat org-directory "/inbox.org"))

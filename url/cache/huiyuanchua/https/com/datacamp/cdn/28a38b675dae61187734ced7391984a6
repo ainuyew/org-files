@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Sat, 06 Jan 2024 22:43:08 GMT
+Content-Type: image/svg+xml
+Content-Length: 621
+Connection: keep-alive
+x-amz-id-2: D1dvqWsXWoRd36uNHma6qmWM2PEOrk5GKKsVRy3U0pd0oL0UG9Ln1g+Jx5M8tpvsrz0QHarEcLU=
+x-amz-request-id: CXYHCMZZ5DJ8RAMW
+Cache-Control: public, max-age=31557600
+Expires: Sat, 27 Jul 2024 01:47:20 GMT
+Last-Modified: Thu, 27 Jul 2023 19:47:21 GMT
+ETag: "92ca4ec399fb84c28ff6655a9179a51d"
+CF-Cache-Status: HIT
+Age: 3276531
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 84177a6b083ba06b-SIN
+
+<svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h18v18h-18z"/></clipPath><g clip-path="url(#a)"><path d="m9 7.36401v3.48549h4.8437c-.2127 1.1209-.851 2.07-1.8082 2.7082l2.9209 2.2664c1.7018-1.5709 2.6837-3.8782 2.6837-6.61908 0-.63817-.0573-1.25187-.1637-1.84091z" fill="#4285f4"/><path d="m3.956 10.7131-.65878.5043-2.331888 1.8164c1.480928 2.9372 4.516198 4.9664 8.034408 4.9664 2.42996 0 4.46726-.8019 5.95636-2.1764l-2.9209-2.2664c-.8018.54-1.8246.8673-3.03546.8673-2.34002 0-4.32818-1.5791-5.04006-3.7064z" fill="#34a853"/><path d="m.965398 4.96655c-.613612 1.21087-.965398 2.57726-.965398 4.03361 0 1.45634.351786 2.82274.965398 4.03364 0 .0081 2.994642-2.3237 2.994642-2.3237-.18-.54-.2864-1.11268-.2864-1.71004 0-.59735.1064-1.17005.2864-1.71005z" fill="#fbbc05"/><path d="m8.99992 3.58365c1.32548 0 2.50368.45818 3.44458 1.34183l2.5773-2.57725c-1.5628-1.456351-3.5918-2.34823-6.02188-2.34823-3.5182 0-6.55366 2.02092-8.034588 4.9664l2.994548 2.32365c.71179-2.12731 2.70002-3.7064 5.04004-3.7064z" fill="#ea4335"/></g></svg>

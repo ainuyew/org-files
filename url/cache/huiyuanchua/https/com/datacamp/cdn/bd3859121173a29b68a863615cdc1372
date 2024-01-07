@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Date: Sat, 06 Jan 2024 22:43:08 GMT
+Content-Type: image/svg+xml
+Content-Length: 379
+Connection: keep-alive
+x-amz-id-2: P4ZPl1JslTx+X8MC1Fs/b9LnDXZkQrD0qDZgXI16nwheq9BqQkWNY5ThHmbKN0NgwMeZP71j0G4=
+x-amz-request-id: QAT1JAYJMR5ATNC5
+Cache-Control: public, max-age=31557600
+Expires: Sat, 27 Jul 2024 01:47:20 GMT
+Last-Modified: Thu, 27 Jul 2023 19:47:21 GMT
+ETag: "b03dbe95d34f5a65dd77186617c9550a"
+CF-Cache-Status: HIT
+Age: 3187462
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Server: cloudflare
+CF-RAY: 84177a6b0c54601c-SIN
+
+<svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><clipPath id="a"><path d="m0 0h18v18h-18z"/></clipPath><g clip-path="url(#a)"><path d="m7.515 17.91c-4.275-.765-7.515-4.455-7.515-8.91 0-4.95 4.05-9 9-9s9 4.05 9 9c0 4.455-3.24 8.145-7.515 8.91l-.495-.405h-1.98z" fill="#2e74f2"/><path d="m12.5101 11.52.405-2.51999h-2.385v-1.755c0-.72.27-1.26 1.35-1.26h1.17v-2.295c-.63-.09-1.35-.18-1.98-.18-2.07004 0-3.51004 1.26-3.51004 3.51v1.98h-2.25v2.51999h2.25v6.345c.495.09.99.135 1.485.135s.99004-.045 1.48504-.135v-6.345z" fill="#fff"/></g></svg>

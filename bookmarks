@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/Documents/org/roam/20231227094502-machine_learning.org")
- (front-context-string . "\nThis is a subse")
- (rear-context-string . "achine Learning\n")
- (position . 94)
- (last-modified 25995 33267 88448 0))
+ (filename . "~/.notes")
+ (front-context-string . "** TODO investig")
+ (rear-context-string . "ing][Sampling]]\n")
+ (position . 162)
+ (last-modified 26010 36938 848371 0))
 )

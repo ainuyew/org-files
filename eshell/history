@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+rg decision
+=======
 ls
 cd Documents
 ls
@@ -12,3 +15,8 @@ git checkout init.el
 git status
 git add .
 git commit
+>>>>>>> 1675a4842411ee8f1f4cd34fea9e281d15e3f50c
+cd ./.
+cd ..
+cd ..
+rm .notes 

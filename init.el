@@ -183,6 +183,7 @@
 
 
   (add-to-list 'load-path "/Library/Frameworks/Python.framework/Versions/3.11/bin/jupyter")
+  (add-to-list 'load-path "/usr/bin/jupyter")
   (require 'jupyter)
 
   (org-babel-do-load-languages

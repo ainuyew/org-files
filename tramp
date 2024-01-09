@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 ;; -*- emacs-lisp -*- <24/01/09 11:40:22 ~/.emacs.d/tramp>
+=======
+<<<<<<< HEAD
+;; -*- emacs-lisp -*- <24/01/06 10:37:32 ~/.emacs.d/tramp>
+=======
+;; -*- emacs-lisp -*- <24/01/07 20:04:56 ~/.emacs.d/tramp>
+>>>>>>> 12c3217db403dd8c7828a297abc51ffffd409999
+>>>>>>> dec8cfe9f392c361ef44ae2a452b310d70d2a19c
 ;; Tramp connection history.  Don't change this file.
 ;; Run `M-x tramp-cleanup-all-connections' instead.
 

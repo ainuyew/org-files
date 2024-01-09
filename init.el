@@ -396,4 +396,4 @@ buffer's text scale."
 
 (load "ox-ipynb") ;; best not to include the ending “.el” or “.elc”
 
-(setq org-default-notes-file (concat org-directory "/inbox.org"))
+(setq org-default-notes-file "~/Documents/org/inbox.org")

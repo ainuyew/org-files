@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/.notes")
- (front-context-string . "** TODO investig")
- (rear-context-string . "ing][Sampling]]\n")
- (position . 162)
- (last-modified 26010 36938 848371 0))
+ (filename . "~/Documents/org/roam/inbox.org")
+ (front-context-string . "** TODO cross va")
+ (rear-context-string)
+ (position . 9)
+ (last-modified 26011 58793 790718 0))
 )

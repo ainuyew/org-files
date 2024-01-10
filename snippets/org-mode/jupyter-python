@@ -2,6 +2,7 @@
 # name: jupyter-python
 # key: \py
 # --
+#+ATTR_LATEX: :options frame=single, linenos, breaklines, tabsize=2
 #+begin_src jupyter-python :session py :exports both :async yes :eval never-export
 $0
 #+end_src

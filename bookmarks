@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/Documents/org/roam/20240110115006-machine_learning_model_validation.org")
- (front-context-string)
- (rear-context-string . "odel Validation\n")
- (position . 111)
- (last-modified 26014 5110 768221 0))
+ (filename . "~/Documents/org/roam/20240128195334-dropout_layers.org")
+ (front-context-string . "\n_Dropout layers")
+ (rear-context-string . " Dropout Layers\n")
+ (position . 92)
+ (last-modified 26038 16573 577720 0))
 )

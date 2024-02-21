@@ -9,9 +9,11 @@
  '((".google.com"
   [url-cookie "AEC" "Ackid1R8bIqfkUnUJHtOk4lStVFHfhctcgRC7GK0jwGN201WVCDeSl3yylw" "Thu, 04-Jul-2024 09:10:56 GMT" "/" ".google.com" t]
   [url-cookie "1P_JAR" "2024-01-06-09" "Mon, 05-Feb-2024 09:10:56 GMT" "/" ".google.com" t])
- ("learn.aisingapore.org"
-  [url-cookie "email_id" "weiyuan.cai%40gmail.com" "Sun Jan 07 01:01:00 2024 GMT" "/" "learn.aisingapore.org" t]
-  [url-cookie "session_id" "8c5e509c2f6b3a9b67c69bb0549e0dd4" "Sun Jan 07 01:01:00 2024 GMT" "/" "learn.aisingapore.org" t]))
+ ("github.com"
+  [url-cookie "_octo" "GH1.1.1840177780.1706743075" "Fri, 31 Jan 2025 23:17:55 GMT" "/" "github.com" t]
+  [url-cookie "logged_in" "no" "Fri, 31 Jan 2025 23:17:55 GMT" "/" "github.com" t])
+ ("accounts.google.com"
+  [url-cookie "__Host-GAPS" "1:2WdqLSw2stZbsRdIp3secg0Hlohg5g:GfqPzPxrd6yhUXys" "Mon, 26-Jan-2026 22:43:42 GMT" "/" "accounts.google.com" t]))
 )
 
 ;; Local Variables:

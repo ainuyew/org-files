@@ -16,7 +16,7 @@
 ;; Initialize package sources
 (require 'package)
 
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+(setq package-archives '(;;("melpa" . "https://melpa.org/packages/")
                          ("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("org" . "https://orgmode.org/elpa/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
@@ -113,7 +113,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
@@ -181,9 +181,9 @@
   ;; Make sure org-indent face is available
   (require 'org-indent)
 
-
-  (add-to-list 'load-path "/Library/Frameworks/Python.framework/Versions/3.11/bin/jupyter")
-  (add-to-list 'load-path "/usr/bin/jupyter")
+  (setq python-shell-interpreter "python3")
+  ;;(add-to-list 'load-path "/Library/Frameworks/Python.framework/Versions/3.11/bin/jupyter") ;; osx
+  ;;(add-to-list 'load-path "/usr/bin/jupyter") ;; wsl
   (require 'jupyter)
 
   (org-babel-do-load-languages
@@ -359,6 +359,9 @@
 ;; source: https://www.reddit.com/r/orgmode/comments/165zeuu/delighted_by_org_svg_preview/
 ;; source: https://karthinks.com/software/scaling-latex-previews-in-emacs/
 (setq org-preview-latex-default-process 'dvisvgm) ;No blur when scaling
+;; source: https://emacs.stackexchange.com/questions/19880/font-size-control-of-latex-previews-in-org-files
+(setq org-format-latex-options (plist-put org-format-latex-options :scale 1.25))
+
 (plist-put org-format-latex-options :foreground nil)
 (plist-put org-format-latex-options :background nil)
 (defun my/text-scale-adjust-latex-previews ()
@@ -398,3 +401,5 @@ buffer's text scale."
 (load "ox-ipynb") ;; best not to include the ending “.el” or “.elc”
 
 (setq org-default-notes-file "~/Documents/org/inbox.org")
+
+(add-hook 'org-mode-hook 'org-fragtog-mode)

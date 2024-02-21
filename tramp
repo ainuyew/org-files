@@ -3,4 +3,4 @@
 ;; Run `M-x tramp-cleanup-all-connections' instead.
 
 (((tramp-file-name "cache" nil nil nil nil nil nil)
-  ("tramp-version" "2.6.0.29.1")))
+  ("tramp-version" "2.7.1-pre")))

@@ -16,7 +16,7 @@
 ;; Initialize package sources
 (require 'package)
 
-(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+(setq package-archives '(;;("melpa" . "https://melpa.org/packages/")
                          ("melpa-stable" . "https://stable.melpa.org/packages/")
                          ("org" . "https://orgmode.org/elpa/")
                          ("elpa" . "https://elpa.gnu.org/packages/")))
@@ -113,7 +113,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(zmq org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(org-noter-pdftools zmq org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"

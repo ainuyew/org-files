@@ -2,8 +2,8 @@
 /home/chuahu/Documents
 /home/chuahu/Documents/org-files
 /Users/huiyuanchua/Documents/org
-/Users/huiyuanchua/Documents
 /Users/huiyuanchua
+<<<<<<< HEAD
 ~/Documents/org/condition-expectation-model
 /home/huiyuanchua/Documents/org/condition-expectation-model
 /home/huiyuanchua/Documents/bayesian-inversion
@@ -18,3 +18,18 @@
 /home/huiyuanchua/Documents/bayesian-inversion
 ~/Documents/bayesian-inversion
 /home/huiyuanchua/Documents/bayesian-inversion
+=======
+/Users/huiyuanchua/Documents/org/diffusion-model/example-4.4-MNIST
+/Users/huiyuanchua/Documents/denoising-diffusion-flax/denoising_diffusion_flax
+/Users/huiyuanchua/Documents/org/diffusion-model
+/Users/huiyuanchua/Documents/org/diffusion-model/example-4.4-MNIST
+/Users/huiyuanchua/Documents/org/condition-expectation-model
+/Users/huiyuanchua/Documents/bayesian-inversion
+/Users/huiyuanchua/Documents
+/Users/huiyuanchua/Documents/Mayo_Grand_Challenge
+/Users/huiyuanchua/Documents/Mayo_Grand_Challenge/Patient_Data
+/Users/huiyuanchua/Documents/Mayo_Grand_Challenge/Patient_Data/Training_Projection_Data
+/Users/huiyuanchua/Documents/Mayo_Grand_Challenge/Patient_Data/Training_Projection_Data/L067
+/Users/huiyuanchua/Documents/bayesian-inversion
+/Users/huiyuanchua/Documents/org/roam
+>>>>>>> e939a603f28814a5c7c7d243e564900bd7e999fa

@@ -1,0 +1,250 @@
+<<<<<<< HEAD
+=======
+ls
+cd Documents
+ls
+cd org-files/
+ls
+=======
+pip install --upgrade numpy
+pip install clu
+pyen
+pyenv
+pyenv local
+pyenv local 3.10
+pyenv local
+python3
+pyenv init
+pyenv
+pyenv
+brew
+brew search python
+brew uninstall python@3.12
+brew uninstall python@3.11
+brew uninstall python@3.10
+brew install python@3.10
+pyenv
+pyenv version
+python3
+pyenv shims
+pyenv
+pyenv versions
+pyenv version
+pyenv init
+python
+python3
+python -m pip install numpy==1.23.1
+python --version
+python -m pip3 install torch torchvision torchaudio
+python -m pip install torch torchvision torchaudio
+python3
+[0.0240, 0.8896, 0.8093],nf
+python
+python uninstall jax-metal
+pip uninstall jax-metal
+python3
+python3 mnist-ddpm-trainer.py 
+python3 mnist-ddpm-trainer.py 
+python3 mnist-ddpm-trainer.py 
+python3 mnist-ddpm-trainer.py 
+python3 mnist-ddpm-trainer.py 
+python3 mnist-ddpm-trainer.py 
+python3 mnist-ddpm-trainer.py 
+python3 mnist-ddpm-trainer.py 
+python3 -m pip uninstall jax-metal
+python3 mnist-ddpm-trainer.py 
+python3 mnist-ddpm-trainer.py 
+pip installed
+pip list --installed
+pip list
+python3 -m pip install jax-metal
+python3
+>>>>>>> e939a603f28814a5c7c7d243e564900bd7e999fa
+git pull
+cd example-4.4-MNIST/
+ls
+pip list
+python3 -m pip install --upgrade pip
+python3 -m pip install jupyter
+python3 -m pip install "jax[cpu]"
+pip install flax
+pip install matplotlib
+pip install seaborn
+pip install tqdm
+pip install tabulate
+Collecting tabulate
+pip install scikit-learn
+pip install jupyter
+pip install pandas seaborn
+pip install matplotlib
+pip install --upgrade pip
+pip install "jax[cpu]"
+pip install einops
+pip install flax
+Using cached importlib_resources-6.1.2-py3-none-any.whl.metadata (3.9 kB)
+pip install scikit-learn
+Using cached etils-1.7.0-py3-none-any.whl (152 kB)
+Using cached markdown_it_py-3.0.0-py3-none-any.whl (87 kB)
+pip install tqdm
+pip install pydicom
+python
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+(0028, 0100) Bits Allocated                      US: 16
+python mayo.py 
+cd ..
+<<<<<<< HEAD
+cd ..
+rm .notes 
+pip install jupyter
+pip install "jax[cuda12_pip]"
+pip install --upgrade pip
+pip install jaxlib
+pip remove jaxlib
+pip delete jaxlib
+pip
+pip uninstall jaxlib
+pip install jaxlib==0.4.6
+pip uninstall jaxlib
+pip install jaxlib==0.4.6
+pip install panas
+pip install pandas
+pip install matplotlib
+pip install seaborn
+pip uninstall "jax[cuda12_pip]"
+pip install "jax[cuda11_pip]"
+su -
+pip install flax
+nvidia-smi
+nvidia-smi
+python train_cem.py 
+python train_ddpm.py 
+python train_ddpm.py 
+python train_ddpm.py 
+python train_ddpm.py 
+python train_ddpm.py 
+rm ddpm_loss_log.npy 
+python train_ddpm.py 
+python train_ddpm.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+python mayo.py 
+pip install scikit-image
+pip freeze
+pip install numpy
+pip update
+pip search numpy
+Pillow @ file:///tmp/build/80754af9/pillow_1625670622947/work
+python
+conda install numpy==1.15
+exi
+exit
+python odl-test.py 
+conda install -c odlgroup odl
+cd
+cd Documents/
+cd bayesian-inversion/
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+pip freeze
+python-dateutil==2.8.2
+cd ..
+cd odl
+Send2Trash==1.8.0
+git checkout v0.7.0
+ls
+cd odl
+ls
+cd discr/
+ls
+cd ..
+ls
+cd contrib/
+ls
+cd datasets/
+ls
+cd ct
+ls
+cd 
+cd Documents/
+cd bayesian-inversion/
+ls
+python odl-test.py 
+python odl-test.py 
+python train_cem.py 
+python train_cem.py 
+python train_cem.py 
+python train_cem.py 
+python train_cem.py 
+python odl-test.py 
+conda env list
+conda deactivate
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+python odl-test.py 
+top
+python gen_cem_samples.py 
+2024-04-08 09:32:09.339868: W external/tsl/tsl/framework/bfc_allocator.cc:291] Allocator (GPU_0_bfc) ran out of memory trying to allocate 491.69MiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+python gen_cem_samples.py 
+=======
+ls
+cd Mayo_Grand_Challenge/
+ls
+cd Patient_Data/
+ls
+cd Training_Projection_Data/
+ls
+cd L067/
+ls
+conda install jupyter
+conda install matplotlib tqdm
+conda install optax
+python --version
+pip install optax
+conda install pandas
+conda install seaborn
+conda install orbax
+conda install orbax-checkpoint
+pip install orbax-checkpoint
+conda install flax
+pip install flax
+conda install einops
+pip install einops
+conda install pydicom
+pip install pydicom
+conda install scikit-image
+conda install h5py
+conda install mpl_toolkit
+conda install mlxtend
+>>>>>>> e939a603f28814a5c7c7d243e564900bd7e999fa

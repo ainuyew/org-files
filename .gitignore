@@ -76,3 +76,4 @@ eln-cache/*
 org-roam.db
 
 tramp
+eshell/*

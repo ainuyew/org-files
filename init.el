@@ -184,13 +184,11 @@
   (require 'org-indent)
 
   (setq python-shell-interpreter "python3")
-  ;;(add-to-list 'load-path "/Library/Frameworks/Python.framework/Versions/3.11/bin/jupyter") ;; osx
-  ;;(add-to-list 'load-path "/usr/bin/jupyter") ;; wsl
-  (require 'org-src)
-  (require 'ob-async)
-  (require 'ob-jupyter)
+
   (require 'jupyter)
-  (require 'jupyter-org-client)
+
+  (with-eval-after-load 'ob-jupyter
+    (org-babel-jupyter-aliases-from-kernelspecs))
 
   (org-babel-do-load-languages
    'org-babel-load-languages
@@ -200,7 +198,9 @@
      (R . t)
      (python . t)
      (jupyter . t)))
-)
+
+  )
+
 
 ;; org-download
 (use-package org-download

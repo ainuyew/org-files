@@ -16,10 +16,13 @@
 ;; Initialize package sources
 (require 'package)
 
-(setq package-archives '(;;("melpa" . "https://melpa.org/packages/")
-                         ("melpa-stable" . "https://stable.melpa.org/packages/")
-                         ("org" . "https://orgmode.org/elpa/")
-                         ("elpa" . "https://elpa.gnu.org/packages/")))
+;;(setq package-archives '(;;("melpa" . "https://melpa.org/packages/")
+;;                         ("melpa-stable" . "https://stable.melpa.org/packages/")
+                         ;;("org" . "https://orgmode.org/elpa/")
+                         ;;("elpa" . "https://elpa.gnu.org/packages/")))
+;;			 ))
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
 
 (package-initialize)
 ;; (unless package-archive-contents
@@ -98,9 +101,9 @@
 (setq-default indent-tabs-mode nil)
 
 ;; automatically clean whitespace
-(use-package ws-butler
-  :hook ((text-mode . ws-butler-mode)
-         (prog-mode . ws-butler-mode)))
+;;(use-package ws-butler
+;;  :hook ((text-mode . ws-butler-mode)
+;;         (prog-mode . ws-butler-mode)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -113,7 +116,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter ws-butler rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
@@ -147,7 +150,6 @@
 ;; Make sure Straight pulls Org from Guix
 ;;(when dw/is-guix-system
 ;;  (straight-use-package '(org :type built-in)))
-
 
 (use-package org
   :defer t
@@ -184,7 +186,11 @@
   (setq python-shell-interpreter "python3")
   ;;(add-to-list 'load-path "/Library/Frameworks/Python.framework/Versions/3.11/bin/jupyter") ;; osx
   ;;(add-to-list 'load-path "/usr/bin/jupyter") ;; wsl
+  (require 'org-src)
+  (require 'ob-async)
+  (require 'ob-jupyter)
   (require 'jupyter)
+  (require 'jupyter-org-client)
 
   (org-babel-do-load-languages
    'org-babel-load-languages
@@ -194,7 +200,6 @@
      (R . t)
      (python . t)
      (jupyter . t)))
-
 )
 
 ;; org-download

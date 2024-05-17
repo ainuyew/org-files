@@ -1,0 +1,11 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("org-capture-last-stored"
+ (filename . "~/Documents/org/roam/20240517202848-properties_of_least_upper_bound_and_greatest_lower_bound.org")
+ (front-context-string . "Let $(a_n)_{n=m}")
+ (rear-context-string . "wer Bound (GLB)\n")
+ (position . 146)
+ (last-modified 26183 19888 324996 0))
+)

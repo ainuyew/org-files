@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: latex-Z
+# key: \ZZ
+# --
+\mathbb{Z}

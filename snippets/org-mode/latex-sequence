@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: latex-sequence
+# key: \seq
+# --
+(a_n)_{n=m}^\infty

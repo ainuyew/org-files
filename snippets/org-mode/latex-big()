@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: latex-big()
+# key:\((
+# --
+\left($0\right)

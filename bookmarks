@@ -3,9 +3,9 @@
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
 (("org-capture-last-stored"
- (filename . "~/Documents/org/roam/20240517202848-properties_of_least_upper_bound_and_greatest_lower_bound.org")
- (front-context-string . "Let $(a_n)_{n=m}")
- (rear-context-string . "wer Bound (GLB)\n")
- (position . 146)
- (last-modified 26183 19888 324996 0))
+ (filename . "~/Documents/org/roam/20240613071057-compact.org")
+ (front-context-string . "A set $E$ is _co")
+ (rear-context-string . "+title: Compact\n")
+ (position . 85)
+ (last-modified 26218 11016 682859 0))
 )

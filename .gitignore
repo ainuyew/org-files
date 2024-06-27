@@ -77,3 +77,5 @@ org-roam.db
 
 tramp
 eshell/*
+.org-id-locations
+bookmarks

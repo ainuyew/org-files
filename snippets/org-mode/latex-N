@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: latex-N
+# key:\NN
+# --
+\mathbb{N}

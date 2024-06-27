@@ -16,13 +16,9 @@
 ;; Initialize package sources
 (require 'package)
 
-;;(setq package-archives '(;;("melpa" . "https://melpa.org/packages/")
-;;                         ("melpa-stable" . "https://stable.melpa.org/packages/")
-                         ;;("org" . "https://orgmode.org/elpa/")
-                         ;;("elpa" . "https://elpa.gnu.org/packages/")))
-;;			 ))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 ;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+;;(add-to-list 'package-archives '("org" . "https://orgmode.org/elpha/") t)
 
 (package-initialize)
 ;; (unless package-archive-contents
@@ -116,7 +112,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(org-noter-pdftools ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
@@ -338,7 +334,7 @@
         (selection . (semibold italic)))
       modus-themes-org-blocks 'tinted-background
       modus-themes-scale-headings t
-      modus-themes-region '(bg-only)
+      modus-themes-region '(accented bg-only)
       modus-themes-headings
       '((1 . (rainbow overline background 1.4))
         (2 . (rainbow background 1.3))
@@ -346,7 +342,8 @@
         (t . (semilight 1.1))))
 
 ;; Load the light theme by default
-(load-theme 'modus-vivendi t)
+;;(load-theme 'modus-vivendi t)
+(load-theme 'modus-operandi t)
 
 ;; https://systemcrafters.net/emacs-from-scratch/helpful-ui-improvements/
 (use-package which-key

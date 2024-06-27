@@ -1,6 +1,6 @@
 # -*- mode: snippet -*-
 # name: latex-begin
-# key: \beg
+# key:\beg
 # --
 \begin{$1}
 $0

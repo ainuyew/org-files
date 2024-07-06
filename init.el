@@ -112,7 +112,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(org-noter-pdftools ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(djvu org-noter-pdftools ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
@@ -403,3 +403,9 @@ buffer's text scale."
 (setq org-default-notes-file "~/Documents/org/inbox.org")
 
 (add-hook 'org-mode-hook 'org-fragtog-mode)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

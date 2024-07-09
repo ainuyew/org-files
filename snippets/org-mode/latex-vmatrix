@@ -1,0 +1,8 @@
+# key: :vmatrix
+# name: latex-vmatrix
+# --
+\begin{vmatrix}
+$0 & & \\\\
+& & \\\\
+& & \\\\
+\end{vmatrix}

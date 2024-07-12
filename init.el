@@ -112,7 +112,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(djvu org-noter-pdftools ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(seq djvu org-noter-pdftools ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"

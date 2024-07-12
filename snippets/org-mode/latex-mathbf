@@ -1,0 +1,4 @@
+# key: 'bf
+# name: latex-mathbf
+# --
+\mathbf{$1}$0

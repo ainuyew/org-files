@@ -1,0 +1,4 @@
+# key: 'bb
+# name: latex-mathbb
+# --
+\mathbb{$1}$0

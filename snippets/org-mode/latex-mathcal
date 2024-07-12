@@ -1,0 +1,4 @@
+# key: 'cal
+# name: latex-mathcal
+# --
+\mathcal{$1}$0

@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: latex-bm
+# key: 'bm
+# --
+\bm{$1}$0

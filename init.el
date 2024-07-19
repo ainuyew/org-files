@@ -340,8 +340,8 @@
         (t . (semilight 1.1))))
 
 ;; Load the light theme by default
-(load-theme 'modus-vivendi t)
-;;(load-theme 'modus-operandi t)
+;;(load-theme 'modus-vivendi t)
+(load-theme 'modus-operandi t)
 
 ;; https://systemcrafters.net/emacs-from-scratch/helpful-ui-improvements/
 (use-package which-key

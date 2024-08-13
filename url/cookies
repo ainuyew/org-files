@@ -1,0 +1,21 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".google.com"
+  [url-cookie "NID" "516=CBoANoa6-B4FmPw_lsLVfsmQxgR-V5YfVPXvlgeM8JfocRbwaPqkvZ6eUvOi5s-EyE0J3-0w_r3Dxz1jzPCPiwlhuqV6Lyoxe_h1xNK3RVWKuFmu-gW1I9zT3-RM-ewrsOOIcXkJpP6iLrpCiZ1X4K8jgd9LUWKQljgQF5dfM8x3J4hINVbjljrIrg" "Mon, 10-Feb-2025 23:44:07 GMT" "/" ".google.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '(("en.wikipedia.org"
+  [url-cookie "WMF-Last-Access" "11-Aug-2024" "Thu, 12 Sep 2024 12:00:00 GMT" "/" "en.wikipedia.org" t]
+  [url-cookie "NetworkProbeLimit" "0.001" "Mon Aug 12 00:46:17 2024 GMT" "/" "en.wikipedia.org" t])
+ (".wikipedia.org"
+  [url-cookie "WMF-Last-Access-Global" "11-Aug-2024" "Thu, 12 Sep 2024 12:00:00 GMT" "/" ".wikipedia.org" t])
+ (".google.com"
+  [url-cookie "AEC" "AVYB7cqijkAtJzNoeOAqiu5-mHTvfTnZov-MgNRNsrzeLBefY2pbcIOxON0" "Fri, 07-Feb-2025 23:44:17 GMT" "/" ".google.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

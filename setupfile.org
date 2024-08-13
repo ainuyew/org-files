@@ -8,7 +8,7 @@
 #+LATEX_HEADER: \renewcommand\familydefault{\sfdefault}
 #+LATEX_HEADER: \usepackage{python}
 #+LATEX_HEADER: \usepackage{tikz}
-#+LATEX_HEADER: \usepackage{amsmath, bm}
+#+LATEX_HEADER: \usepackage{amsmath, bm, bbm}
 #+LATEX_HEADER: \usepackage{arev}
 #+LATEX_HEADER: \usepackage{minted}
 #+LATEX_HEADER: \usemintedstyle{borland}

@@ -112,7 +112,7 @@
  '(org-src-fontify-natively t)
  '(org-src-preserve-indentation t)
  '(package-selected-packages
-   '(seq djvu org-noter-pdftools ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
+   '(org-transclusion seq djvu org-noter-pdftools ob-async emacsql-sqlite org-fragtog org-noter pdf-tools which-key citar-org-roam orderless vertico org-ref jupyter rust-mode org-babel-eval-in-repl yasnippet-snippets yasnippet org-roam-ui org-download org-roam markdown-mode))
  '(safe-local-variable-values
    '((eval setq org-download-image-dir
            (concat "./"
@@ -409,3 +409,7 @@ buffer's text scale."
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+(define-key global-map (kbd "<f12>") #'org-transclusion-add)
+;;(define-key global-map (kbd "C-n t") #'org-transclusion-mode)

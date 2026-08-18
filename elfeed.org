@@ -1,0 +1,31 @@
+* Feeds :elfeed:
+
+** Math & Science
+*** [[https://arxiv.org/rss/math][arXiv Math]] :math:
+*** [[https://www.quantamagazine.org/feed/][Quanta Magazine]] :math: science:
+*** [[https://terrytao.wordpress.com/feed/][Terence Tao]] :math:
+
+** AI & Tech
+*** [[https://arxiv.org/rss/cs.AI][arXiv AI]] :ai:
+*** [[https://blog.google/technology/ai/rss/][Google AI]] :ai:
+*** [[https://github.com/ggml-org/llama.cpp/issues.atom][Llama.cpp Releases]] :code: llm:
+
+** Emacs
+*** [[https://sachachua.com/blog/category/emacs-news/feed/][Sacha Chua (Emacs News)]] :emacs:
+*** [[https://protesilaos.com/codelog.xml][Protesilaos Stavrou]] :emacs:
+*** [[https://planet.emacslife.com/rss2.0.xml][Planet Emacslife]] :emacs:
+* US Market & Macro News
+ * [[https://feeds.content.dowjones.io/public/rss/mw_topstories][The Wall Street Journal (Markets & Finance)]] :us-market: Deep coverage of US equities, corporate earnings, central banking, and Wall Street coverage.
+ * [[https://search.cnbc.com/rs/search/combinedrenderer.view?partnerId=2000&keywords=finance&target=all][CNBC (Top Stores / Finance)]] :us-market: Real-time US market movements, breaking business news, and earnings coverage.
+ * [[http://feeds.marketwatch.com/marketwatch/topstories/][MarketWatch (Top Stories)]] :us-market: US market commentary, sector analysis, and economic data releases.
+* Global Financial Markets & Institutional News
+ * [[https://www.reutersagency.com/feed/?best-topics=business-finance][Reuters (Business & Markets)]] :global-market: Global macroeconomic policy, international equities, foreign exchange, and commodities.
+ * [[https://www.ft.com/global-economy?format=rss][Financial Times (Global Economy)]] :global-market: International trade, central bank policies (Fed, ECB, BOJ), and broader macroeconomic trends.
+ * [[https://feeds.feedburner.com/bloomberg_markets][Bloomberg (Markets)]] :global-market: Fixed income, foreign exchange, macro analysis, and institutional capital flows.
+* Macro Economic Data & Official Indicators
+ * [[https://www.federalreserve.gov/aboutthefed/fedhistory/rss.xml][Federal Reserve Board (Press Releases / Monetary Policy)]] :macro-economics: Interest rate announcements, FOMC statements, and Federal Reserve policy updates.
+ * [[https://www.bls.gov/feed/bls_latest.rss][U.S. Bureau of Labor Statistics (BLS)]] :macro-economics: Official US macroeconomic data including Inflation (CPI), Employment (Non-Farm Payrolls), and PPI releases.
+ * [[https://fred.stlouisfed.org/rss/fred_updates.xml][FRED (Federal Reserve Bank of St. Louis - Economic Data Updates)]] :macro-economics: Automated notifications when key underlying economic data series are updated.
+* Data & Market Analytics
+ * [[https://www.investing.com/rss/news.rss][Investing.com (Analysis & Opinion)]] :market-analysis: Market commentary, earnings revision chatter, and broad asset coverage.
+ * [[https://seekingalpha.com/feed.xml][Seeking Alpha (Market Currents)]] :market-analysis: Quick-hit market updates, earnings sentiment, and single-stock analysis.
